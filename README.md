@@ -26,4 +26,4 @@ The photos could be deleted *be long press on the photo*, or viewed by *clicking
 On the viewer you could create Meme using the viewed photo
 
 
-** The map view holds "Meme" bar tap** your created **_Memes_** will be available in there 
+**The map view holds "Meme" bar tap** your created **_Memes_** will be available in there 
