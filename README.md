@@ -18,7 +18,7 @@ In addition, the user will have the ability to create Memes using the uploaded p
 ### Photo Collection 
 The application will load photos as long as there was internet connection.
 
-The photos could be deleted *be long press on the photo*, or viewed by *clicking the photo*.
+The photos could be deleted __*be long press on the photo*__, or viewed by __*clicking the photo*__.
 
 
 ### Photo viewer
