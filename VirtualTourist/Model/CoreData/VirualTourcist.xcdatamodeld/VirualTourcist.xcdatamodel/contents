@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="photoCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="gallery" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Photos" inverseName="location" inverseEntity="Photos"/>
+    </entity>
+    <entity name="Memes" representedClassName="Memes" syncable="YES" codeGenerationType="class">
+        <attribute name="bottomText" optional="YES" attributeType="String"/>
+        <attribute name="creatingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="meme" optional="YES" attributeType="Binary"/>
+        <attribute name="originalImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="topText" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Photos" representedClassName="Photos" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="largeImageURL" optional="YES" attributeType="URI"/>
+        <attribute name="loadingDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="url" optional="YES" attributeType="URI"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="gallery" inverseEntity="Location"/>
+    </entity>
+    <elements>
+        <element name="Location" positionX="176.859375" positionY="-390.35546875" width="128" height="120"/>
+        <element name="Photos" positionX="-43.28515625" positionY="-242.3359375" width="128" height="118"/>
+        <element name="Memes" positionX="63" positionY="-279" width="128" height="118"/>
+    </elements>
+</model>
